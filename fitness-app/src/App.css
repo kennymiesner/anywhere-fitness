@@ -1,0 +1,561 @@
+/* CSS reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  /* border: 0; */
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-size: 62.5%;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CSS reset ended */
+
+/* App.js */
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 1.5rem;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  margin: 5px;
+}
+
+.nav-links a:hover {
+  color: #9acd32;
+}
+
+.welcome {
+  align-self: flex-end;
+  font-size: 1rem;
+  margin: 0 1rem 1rem 0;
+}
+
+/* Home */
+
+/* .home-container h2 {
+  font-size: 2rem;
+  margin: 1rem;
+} */
+
+/* Login & Sign Up */
+
+.form-wrapper {
+  display: flex;
+  padding-top: 5rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.form-text-container h2 {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.form-text-container p {
+  font-size: 1.2rem;
+}
+
+.form-wrapper .switch {
+  margin-left: 1rem;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form-wrapper .switch:hover {
+  text-decoration: underline;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container .login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  font-size: 1rem;
+  font-weight: 200;
+  margin: 1rem;
+}
+
+.form-container input {
+  margin-left: 0.5rem;
+  padding: 0.2rem 0.5rem;
+}
+
+#submit-login {
+  color: #212324;
+  background-color: #b9e529;
+  border-color: #b9e529;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+
+#submit-login:disabled {
+  color: crimson;
+  background-color: white;
+  border: 2px solid crimson;
+  cursor: not-allowed;
+}
+
+.error-message {
+  font-size: 1rem;
+  color: red;
+}
+
+/* Classes */
+
+.classes-wrapper {
+  margin: 2rem;
+}
+
+/* Class */
+
+.class-wrapper {
+  display: flex;
+}
+
+.class-item {
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+  border: 3px #9acd32 dotted;
+  border-radius: 20px;
+}
+
+.class-item h2 {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #136b4f;
+  font-weight: bold;
+}
+
+.class-item a:link {
+  text-decoration: none;
+}
+
+.class-item h2:hover {
+  color: #912a17;
+}
+
+.class-item p {
+  font-size: 1rem;
+  margin: 0.2rem;
+}
+.class-item span {
+  text-transform: capitalize;
+}
+
+/* Class Details */
+
+.class-details-wrapper {
+  border: 5px #9acd32 dotted;
+  border-radius: 20px;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.class-details-wrapper h2 {
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+
+.class-details-wrapper p {
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+
+.class-details-wrapper span {
+  text-transform: capitalize;
+}
+
+.class-details-wrapper .full-message {
+  color: red;
+}
+
+.class-details-wrapper .booked-message {
+  color: #b17127;
+}
+
+.class-details-wrapper .reserve-btn {
+  color: #c2e996;
+  background-color: #08946a;
+  border-color: #08946a;
+  margin: 0 auto;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+}
+
+.class-details-wrapper .back-btn {
+  color: #556247;
+  background-color: #d7d011;
+  border-color: #d7d011;
+  margin: 0 auto;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+/* Booking */
+
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.booked-card {
+  width: 30%;
+  margin: 0 auto;
+  border: 5px #9acd32 dotted;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+.booked-card h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  color: #136b4f;
+  font-weight: bold;
+}
+
+.booked-card h2:hover {
+  color: #912a17;
+}
+
+.booked-card p {
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.booked-card h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.booked-card .cancel-btn {
+  color: white;
+  background-color: #da515f;
+  border-color: #da515f;
+  margin: 0 auto;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+.booking-message {
+  font-size: 1.2rem;
+}
+
+/* ClassAdmin */
+
+.class-item-admin {
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+  border: 3px #9acd32 dotted;
+  border-radius: 20px;
+}
+
+.class-item-admin h2 {
+  font-size: 1.5rem;
+  color: #136b4f;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.class-item-admin p {
+  font-size: 1rem;
+  margin: 0.2rem;
+}
+
+.edit {
+  margin-top: 1.5rem;
+}
+
+.edit-btn {
+  color: #312881;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.edit a:hover {
+  text-decoration: underline;
+}
+
+/* AddClass & EditForm */
+
+.form-body {
+  background: rgba(0, 151, 19, 0.1);
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+}
+
+.addClass-wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.edit-btns {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5rem;
+}
+
+.submit-btn {
+  color: white;
+  background-color: #0f8612;
+  border-color: #0f8612;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.delete-btn {
+  color: white;
+  background-color: #d31c35;
+  border-color: #d31c35;
+  margin: 0 auto;
+  padding: 0.7rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: default;
+  display: block;
+}
+
+/* Modal styles */
+
+.modal-dialog {
+  position: absolute;
+  background-color: white;
+  width: 37%;
+}
+
+.modal-content {
+  padding: 1rem;
+}
+
+.text-warning {
+  color: red;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 600px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .welcome {
+    align-self: center;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin: 5px;
+  }
+  .nav-links a:hover {
+    color: #9acd32;
+  }
+}
